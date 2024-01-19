@@ -1,6 +1,7 @@
 ###### Requirements without Version Specifiers ######`
 flask
 beautifulsoup4
+gunicorn
 
 ###### Requirements with Version Specifiers ######`
 docopt == 0.6.1             # Version Matching. Must be version 0.6.1
