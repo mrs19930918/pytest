@@ -28,8 +28,8 @@ def get_article():
     title = headings[0].text if headings else 'No Title'
 
     # 埋め込み動画のURLの取得
-    video_embed = soup.find('iframe')  # 適切なセレクタを指定
-    video_url = video_embed['src'] if video_embed else 'No Video'
+    video_embed = soup.find('iframe')
+video_url = video_embed['src'] if video_embed and 'src' in video_embed.attrs else 'No Video'
 
     return render_template('article.html', title=title, video_url=video_url)
 
